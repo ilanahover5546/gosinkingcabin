@@ -1,0 +1,15 @@
+# flag-parser-94829c
+
+A Go flag parser utility.
+
+## Installation
+
+```bash
+go build -o app
+```
+
+## Usage
+
+```bash
+./app
+```

